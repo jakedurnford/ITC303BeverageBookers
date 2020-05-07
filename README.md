@@ -1,5 +1,18 @@
 # ITC303BeverageBookers
 
+Item |  Comment  |   Location
+-------------|------------|-----------|
+1 | This is a test | doesnt have one yet but could be a link
+
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+
+
+
 The following links are to Current Files with accessable version control using Ctrl + Alt + Shift + H within the google doc:
 
 Project Proposal: https://docs.google.com/open?id=1JFZmSlJW3FBlHraEyjXozC6HdbxuaQ-v1kRld2DZUS4

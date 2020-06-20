@@ -1,0 +1,635 @@
+{
+	"info": {
+		"_postman_id": "0b40d358-3f12-41f8-ba65-ddeedaf371df",
+		"name": "Local BeverageAPI - Create User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"item": [
+				{
+					"name": "localhost/BeverageApi/public/createuser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8025dac9-3a2d-4ab5-91b1-b93a5ca74124",
+								"exec": [
+									"pm.test(\"Status code is 422\", function () {\r",
+									"    pm.response.to.have.status(422);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json()\r",
+									"\r",
+									"console.log(jsonData);\r",
+									"\r",
+									"pm.test('Error status is true', function () {\r",
+									"    pm.expect(jsonData.error).to.eql(true);\r",
+									"});\r",
+									"\r",
+									"pm.test('Return message correct', function () {\r",
+									"pm.expect(jsonData.message).to.eql('Required parameters lastName are missing or empty');\r",
+									"});\r",
+									"\r",
+									"pm.test(responseBody, true)\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "janedoe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Jane",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Doe",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "0402000111",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "localhost/BeverageApi/public/createuser",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"BeverageApi",
+								"public",
+								"createuser"
+							]
+						},
+						"description": "Tries to create a new user with the 'lastName' field empty"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/BeverageApi/public/createuser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9533829a-2a70-4c1d-83b5-54c06b2c169e",
+								"exec": [
+									"pm.test(\"Status code is 422\", function () {\r",
+									"    pm.response.to.have.status(422);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json()\r",
+									"\r",
+									"console.log(jsonData);\r",
+									"\r",
+									"pm.test('Error status is true', function () {\r",
+									"    pm.expect(jsonData.error).to.eql(true);\r",
+									"});\r",
+									"\r",
+									"pm.test('Return message correct', function () {\r",
+									"pm.expect(jsonData.message).to.eql('Required parameters firstName are missing or empty');\r",
+									"});\r",
+									"\r",
+									"pm.test(responseBody, true)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "janedoe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Jane",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "Doe",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0402000111",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "localhost/BeverageApi/public/createuser",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"BeverageApi",
+								"public",
+								"createuser"
+							]
+						},
+						"description": "Tries to create a new user with the 'firstName' field empty"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/BeverageApi/public/createuser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "71053458-a27d-45ec-b82e-ed55aa62e4b8",
+								"exec": [
+									"pm.test(\"Status code is 422\", function () {\r",
+									"    pm.response.to.have.status(422);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json()\r",
+									"\r",
+									"console.log(jsonData);\r",
+									"\r",
+									"pm.test('Error status is true', function () {\r",
+									"    pm.expect(jsonData.error).to.eql(true);\r",
+									"});\r",
+									"\r",
+									"pm.test('Return message correct', function () {\r",
+									"pm.expect(jsonData.message).to.eql('Required parameters password are missing or empty');\r",
+									"});\r",
+									"\r",
+									"pm.test(responseBody, true)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "janedoe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "firstName",
+									"value": "Jane",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Doe",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0402000111",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "localhost/BeverageApi/public/createuser",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"BeverageApi",
+								"public",
+								"createuser"
+							]
+						},
+						"description": "Tries to create a new user with the 'password' field empty"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/BeverageApi/public/createuser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f351504f-1c80-4b23-ba89-113f8583ceea",
+								"exec": [
+									"pm.test(\"Status code is 422\", function () {\r",
+									"    pm.response.to.have.status(422);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json()\r",
+									"\r",
+									"console.log(jsonData);\r",
+									"\r",
+									"pm.test('Error status is true', function () {\r",
+									"    pm.expect(jsonData.error).to.eql(true);\r",
+									"});\r",
+									"\r",
+									"pm.test('Return message correct', function () {\r",
+									"pm.expect(jsonData.message).to.eql('Required parameters email are missing or empty');\r",
+									"});\r",
+									"\r",
+									"pm.test(responseBody, true)\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "janedoe@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Jane",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Doe",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0402000111",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "localhost/BeverageApi/public/createuser",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"BeverageApi",
+								"public",
+								"createuser"
+							]
+						},
+						"description": "Try creating a new user with the 'email' field empty"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/BeverageApi/public/createuser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "16f21a80-ff4d-40ec-8065-073a4c3e586a",
+								"exec": [
+									"pm.test(\"Status code is 422\", function () {\r",
+									"    pm.response.to.have.status(422);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json()\r",
+									"\r",
+									"console.log(jsonData);\r",
+									"\r",
+									"pm.test('Error Status is true', function () {\r",
+									"    pm.expect(jsonData.error).to.eql(true);\r",
+									"});\r",
+									"\r",
+									"pm.test('Return message correct', function () {\r",
+									"    pm.expect(jsonData.message).to.eql('Required parameters phone are missing or empty');\r",
+									"});\r",
+									"\r",
+									"pm.test(responseBody, true)\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "janedoe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Jane",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Doe",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0402000111",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "localhost/BeverageApi/public/createuser",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"BeverageApi",
+								"public",
+								"createuser"
+							]
+						},
+						"description": "Tries to create a new user with the 'phone' field empty"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/BeverageApi/public/createuser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "222604e3-f46f-404d-bb25-fa80b20e93e4",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json()\r",
+									"\r",
+									"console.log(jsonData);\r",
+									"\r",
+									"pm.test('Error status is false', function () {\r",
+									"    pm.expect(jsonData.error).to.eql(false);\r",
+									"});\r",
+									"\r",
+									"pm.test('Return message correct', function () {\r",
+									"pm.expect(jsonData.message).to.eql('User created successfully');\r",
+									"});\r",
+									"\r",
+									"pm.test(responseBody, true)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "johndoe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Doe",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0400222333",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "localhost/BeverageApi/public/createuser",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"BeverageApi",
+								"public",
+								"createuser"
+							]
+						},
+						"description": "Create User John Doe"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost/BeverageApi/public/createuser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "02d73640-66af-45c6-bc73-7ef42ec80ab9",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json()\r",
+									"\r",
+									"console.log(jsonData);\r",
+									"\r",
+									"pm.test('Error status is true', function () {\r",
+									"    pm.expect(jsonData.error).to.eql(true);\r",
+									"});\r",
+									"\r",
+									"pm.test('Return message correct', function () {\r",
+									"pm.expect(jsonData.message).to.eql('User Already Exists');\r",
+									"});\r",
+									"\r",
+									"pm.test(responseBody, true)\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "johndoe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Doe",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0400222333",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "localhost/BeverageApi/public/createuser",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"BeverageApi",
+								"public",
+								"createuser"
+							]
+						},
+						"description": "Tries to create a user that already exists"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

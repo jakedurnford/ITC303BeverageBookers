@@ -14,3 +14,4 @@ Item |  Comment  |   Location
 10 | FAT Documentation | [Link](https://github.com/jakedurnford/ITC303BeverageBookers/tree/Benn-Documentation/Documentation/Testing/FAT%20Documents)|
 11 | Master Test Plan | [Link](https://github.com/jakedurnford/ITC303BeverageBookers/blob/Benn-Documentation/Documentation/Testing/Master%20Test%20Plan%20v2.0.pdf)|
 12 | Use Cases | [Link](https://github.com/jakedurnford/ITC303BeverageBookers/tree/Benn-Documentation/Documentation/Use%20Case%20Docs/LCAM%20Full%20Use-Case%20Descriptions)|
+13 | Elaboration Phase Assessment | [Link](https://github.com/jakedurnford/ITC303BeverageBookers/blob/master/Documentation/Phase%20Assesments/Elaboration%20Phase%20Status%20Assesment.pdf)

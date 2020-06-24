@@ -2,9 +2,9 @@
 
 Item |  Comment  |   Location
 -------------|------------|-----------|
-1 | Architecture Notebook | [link](https://github.com/jakedurnford/ITC303BeverageBookers/blob/master/Documentation/Architecture/Architecture%20Notebook%20for%20Beverage%20Bookers.docx.pdf)|
-2 | LCAM Video Demo | [link] (https://drive.google.com/file/d/1ykwsvKaUWpTRX5nqWa_wkkp6OukcYa4w/view?usp=sharing)
-3 | NFR_Checklist | [link] (https://github.com/jakedurnford/ITC303BeverageBookers/blob/master/Documentation/NFR_Checklist%26Specification/NFR_Checklist_BeverageBooker%202.0.pdf)|
+1 | Architecture Notebook | [link](https://github.com/jakedurnford/ITC303BeverageBookers/blob/master/Documentation/Architecture/Architecture%20Notebook%20for%20Beverage%20Bookers.docx.pdf).|
+2 | LCAM Video Demo | [link] (https://drive.google.com/file/d/1ykwsvKaUWpTRX5nqWa_wkkp6OukcYa4w/view?usp=sharing)|
+3 | NFR_Checklist | [link] (https://github.com/jakedurnford/ITC303BeverageBookers/blob/master/Documentation/NFR_Checklist%26Specification/NFR_Checklist_BeverageBooker%202.0.pdf).|
 4 | NFR_Specification | [link](https://github.com/jakedurnford/ITC303BeverageBookers/blob/master/Documentation/NFR_Checklist%26Specification/NFR_Specification_BeverageBooker%202.0.pdf)|
 5 | Project Vision  | [link] (https://github.com/jakedurnford/ITC303BeverageBookers/blob/master/Documentation/Project_Vision/Project%20Vision%202.0.pdf)|
 6 | Project Plan | [Link] (https://github.com/jakedurnford/ITC303BeverageBookers/blob/Emily-Docs/Documentation/Project%20Plan/Project%20Plan%20v2.1%20.pdf)|

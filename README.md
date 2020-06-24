@@ -2,8 +2,7 @@
 
 Item |  Comment  |   Location
 -------------|------------|-----------|
-1 | This is a test | doesnt have one yet but could be a link
-
+1 | Architecture Notebook | .[https://github.com/jakedurnford/ITC303BeverageBookers/blob/master/Documentation/Architecture/Architecture%20Notebook%20for%20Beverage%20Bookers.docx.pdf].(Link)
 
 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
 - [x] list syntax required (any unordered or ordered list supported)
